@@ -9,7 +9,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :video_calling_app, VideoCallingAppWeb.Endpoint,
-  url: [host: "localhost","https://phoenixsocket.onrender.com","phoenixsocket.onrender.com"],
+  url: [host: "phoenixsocket.onrender.com"],
   secret_key_base: "UJUfYWqY3fk32cH2X7WsNYXyKDMyFdmNLBUm0yG2cGu7+tjE0aePTnxF6Dyis/QU",
   render_errors: [view: VideoCallingAppWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: VideoCallingApp.PubSub,
