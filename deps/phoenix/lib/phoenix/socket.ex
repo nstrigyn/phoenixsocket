@@ -13,7 +13,9 @@ defmodule Phoenix.Socket do
   By default, Phoenix supports both websockets and longpoll when invoking
   `Phoenix.Endpoint.socket/3` in your endpoint:
 
-      socket "/socket", MyAppWeb.Socket, websocket: true, longpoll: false
+   ## socket "/socket", MyAppWeb.Socket, 
+   ## websocket: true, longpoll: false
+    socket "/socket", MyAppWeb.Socket,websocket: [check_origin: ["https://phoenixsocket.onrender.com", "//phoenixsocket.onrender.com", "//other.com"]],longpoll: false
 
   The command above means incoming socket connections can be made via
   a WebSocket connection. Events are routed by topic to channels:
