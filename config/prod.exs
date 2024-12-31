@@ -10,8 +10,15 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :video_calling_app, VideoCallingAppWeb.Endpoint,
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  http: [
+    port: String.to_integer(System.get_env("PORT") || "4000"),
+    transport_options: [socket_opts: [:inet6]]
+  ],
+  url: [host: "phoenixsocket.onrender.com", port: 443],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  server: true,
+  check_origin: ["https://phoenixsocket.onrender.com"]
+
 
 # Do not print debug messages in production
 config :logger, level: :info

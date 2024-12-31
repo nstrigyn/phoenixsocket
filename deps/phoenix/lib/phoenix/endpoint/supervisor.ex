@@ -249,7 +249,7 @@ defmodule Phoenix.Endpoint.Supervisor do
      reloadable_compilers: [:gettext, :phoenix, :elixir],
      secret_key_base: nil,
      static_url: nil,
-     url: [host: "localhost", path: "/"],
+     url: [host: "phoenixsocket.onrender.com", path: "/"],
 
      # Supervisor config
      watchers: []]
