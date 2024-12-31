@@ -1,5 +1,5 @@
 {application,video_calling_app,
-    [{config_mtime,1735288203},
+    [{config_mtime,1735665279},
      {compile_env,
          [{video_calling_app,['Elixir.VideoCallingAppWeb.Gettext'],error}]},
      {optional_applications,[]},
