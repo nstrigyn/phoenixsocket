@@ -15,7 +15,7 @@ defmodule Phoenix.Socket do
 
    ## socket "/socket", MyAppWeb.Socket, 
    ## websocket: true, longpoll: false
-    socket "/socket", MyAppWeb.Socket,websocket: [check_origin: ["https://phoenixsocket.onrender.com", "//phoenixsocket.onrender.com", "//other.com"]],longpoll: false
+    socket "/socket", MyAppWeb.Socket,websocket: [check_origin: false],longpoll: false
 
   The command above means incoming socket connections can be made via
   a WebSocket connection. Events are routed by topic to channels:
