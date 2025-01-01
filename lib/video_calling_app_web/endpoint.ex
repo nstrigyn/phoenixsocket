@@ -11,6 +11,7 @@ defmodule VideoCallingAppWeb.Endpoint do
   ]
 
   socket "/socket", VideoCallingAppWeb.UserSocket,
+  websocket: [check_origin: ["https://phoenixsocket.onrender.com"]],
   longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]

@@ -15,7 +15,6 @@ config :video_calling_app, VideoCallingAppWeb.Endpoint,
   check_origin: ["https://phoenixsocket.onrender.com"],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true
-  check_origin: ["https://phoenixsocket.onrender.com"]
 
 # Do not print debug messages in production
 config :logger, level: :info
