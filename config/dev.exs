@@ -21,6 +21,7 @@ config :video_calling_app, VideoCallingAppWeb.Endpoint,
     ]
   ]
 
+
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed
